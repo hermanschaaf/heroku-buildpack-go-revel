@@ -74,7 +74,7 @@ fi
 name=$(cat $build/.godir)
 p=$GOPATH/src/$name
 mkdir -p $p
-cp -r $build/* $p
+cp -r $build/ $p/
 echo "------------"
 echo $build
 echo $p
