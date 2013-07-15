@@ -74,8 +74,11 @@ fi
 name=$(cat $build/.godir)
 p=$GOPATH/src/$name
 mkdir -p $p
-cp -r $build/. $p
-
+cp -r $build/* $p
+echo "------------"
+echo $build
+echo $p
+echo "------------"
 unset GIT_DIR # unset git dir or it will mess with goinstall
 echo "-----> Running: go get -x ./..."
 cd $p
