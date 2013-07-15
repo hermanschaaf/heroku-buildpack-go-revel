@@ -78,9 +78,9 @@ cp -r $build/* $p/
 echo "------------"
 echo $build
 echo $p
-ls $build
+ls -al $build
 echo "----"
-ls $p
+ls -al $p
 echo "------------"
 unset GIT_DIR # unset git dir or it will mess with goinstall
 echo "-----> Running: go get -x ./..."
