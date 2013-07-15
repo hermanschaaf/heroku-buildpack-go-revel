@@ -81,8 +81,6 @@ echo $p
 ls $build
 echo "----"
 ls $p
-echo "----"
-cp -r $build/. 
 echo "------------"
 unset GIT_DIR # unset git dir or it will mess with goinstall
 echo "-----> Running: go get -x ./..."
